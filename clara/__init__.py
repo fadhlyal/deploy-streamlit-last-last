@@ -18,6 +18,8 @@ from . import java_interpreter
 
 from . import matching
 
-from . import pylpsolve
-from . import ilp
 from . import repair
+
+def get_pylpsolve():
+    from . import pylpsolve  # Import it only when needed
+    return pylpsolve
