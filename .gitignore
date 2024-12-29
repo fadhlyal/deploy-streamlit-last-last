@@ -130,7 +130,9 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.clara-env
 env/
+clara-env/
 venv/
 ENV/
 env.bak/
