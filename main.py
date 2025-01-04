@@ -90,7 +90,8 @@ def main():
             return
 
         st.header("Generate Feedback for '" + problem_type + "'")
-
+        st.error(os.getenv("LD_LIBRARY_PATH", ""))
+        
         if(problem_type == "problemA") :
             st.write("TES")
 
