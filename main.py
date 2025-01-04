@@ -19,6 +19,13 @@ subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=Tru
 command = ['chmod', '755', '/mount/src/deploy-streamlit-last-last/lpsolve/liblpsolve55.so']
 subprocess.run(command, check=True)
 
+file_path = '/mount/src/deploy-streamlit-last-last/lpsolve/liblpsolve55.so'
+
+if os.path.exists(file_path):
+    st.write(f"File exists: {file_path}")
+else:
+    st.write(f"File does not exist: {file_path}")
+
 # Configure Streamlit page
 st.set_page_config(
     page_title="Clara Feedback Analysis",
