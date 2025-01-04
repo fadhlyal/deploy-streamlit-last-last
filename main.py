@@ -13,8 +13,8 @@ from clara.feedback_repair import RepairFeedback
 from clara.feedback_simple import SimpleFeedback
 from clara.feedback_python import PythonFeedback
 
-subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=True)
 os.environ["LD_LIBRARY_PATH"] = "/mount/src/deploy-streamlit-last-last/lpsolve"
+subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=True)
 
 # Configure Streamlit page
 st.set_page_config(
