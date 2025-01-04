@@ -21,7 +21,7 @@ subprocess.run(command, check=True)
 
 file_path = '/mount/src/deploy-streamlit-last-last/lpsolve/liblpsolve55.so'
 result = subprocess.run(['ls', file_path], check=True, capture_output=True, text=True)
-print(result.stdout)
+print(os.path.exists(file_path))
 
 # Configure Streamlit page
 st.set_page_config(
