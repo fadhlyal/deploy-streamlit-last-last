@@ -5,13 +5,13 @@
     "distutils": {
         "depends": [],
         "include_dirs": [
-            "D:\\TA\\Test Terakhir\\banget banget\\clara-master\\lpsolve"
+            "/workspaces/deploy-streamlit-last-last/lpsolve"
         ],
         "libraries": [
             "lpsolve55"
         ],
         "library_dirs": [
-            "D:\\TA\\Test Terakhir\\banget banget\\clara-master\\lpsolve"
+            "/workspaces/deploy-streamlit-last-last/lpsolve"
         ],
         "name": "clara.pylpsolve",
         "sources": [
@@ -1520,7 +1520,7 @@ static const char *__pyx_filename;
 /* #### Code section: filename_table ### */
 
 static const char *__pyx_f[] = {
-  "clara\\\\pylpsolve.pyx",
+  "clara/pylpsolve.pyx",
   "<stringsource>",
   "contextvars.pxd",
   "array.pxd",
@@ -2813,7 +2813,7 @@ static const char __pyx_k_LpModel_setverbose[] = "LpModel.setverbose";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_LpModel_setpresolve[] = "LpModel.setpresolve";
-static const char __pyx_k_clara_pylpsolve_pyx[] = "clara\\pylpsolve.pyx";
+static const char __pyx_k_clara_pylpsolve_pyx[] = "clara/pylpsolve.pyx";
 static const char __pyx_k_LpModel_getvariables[] = "LpModel.getvariables";
 static const char __pyx_k_LpModel_addconstraint[] = "LpModel.addconstraint";
 static const char __pyx_k_LpModel_printsolution[] = "LpModel.printsolution";

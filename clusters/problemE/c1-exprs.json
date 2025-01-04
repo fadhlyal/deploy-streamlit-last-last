@@ -1,0 +1,3517 @@
+[
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "LtE",
+              "args": [
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "LtE",
+                  "args": [
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    },
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "100",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "And",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "LtE",
+                      "args": [
+                        {
+                          "type": "Const",
+                          "value": "100",
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "1000",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "LtE",
+                          "args": [
+                            {
+                              "type": "Const",
+                              "value": "1000",
+                              "original": null
+                            },
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "Lt",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "10000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "And",
+                          "args": [
+                            {
+                              "type": "Op",
+                              "name": "LtE",
+                              "args": [
+                                {
+                                  "type": "Const",
+                                  "value": "10000",
+                                  "original": null
+                                },
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            },
+                            {
+                              "type": "Op",
+                              "name": "Lt",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "100000",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhribuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "$ret",
+                          "primed": false,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Lt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "10",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "100",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "1000",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "10000",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"puluhribuan\"",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC20.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Lt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "10",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "100",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "1000",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": true,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "10000",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Lt",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "100000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhribuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "$ret",
+                          "primed": false,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC22.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "LtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "9",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "LtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "99",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "And",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "GtE",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "100",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "LtE",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "999",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "GtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "1000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "LtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "9999",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "And",
+                          "args": [
+                            {
+                              "type": "Op",
+                              "name": "GtE",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "10000",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            },
+                            {
+                              "type": "Op",
+                              "name": "LtE",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "99999",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhribuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "$ret",
+                          "primed": false,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC34.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Lt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "10",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Gt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "9",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "100",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "And",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Gt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "99",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "1000",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Gt",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "999",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "Lt",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "10000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "And",
+                          "args": [
+                            {
+                              "type": "Op",
+                              "name": "Gt",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "999",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            },
+                            {
+                              "type": "Op",
+                              "name": "Lt",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "100000",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhribuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"ratusribuan\"",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC44.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "GtE",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "10000",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"puluhribuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "1000",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"ribuan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "100",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "GtE",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "10",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"puluhan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"satuan\"",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC89.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "100",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "And",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "GtE",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "100",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "1000",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "GtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "1000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "Lt",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "10000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "And",
+                          "args": [
+                            {
+                              "type": "Op",
+                              "name": "GtE",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "10000",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            },
+                            {
+                              "type": "Op",
+                              "name": "Lt",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "100000",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhribuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "$ret",
+                          "primed": false,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC46.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Lt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "100000",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10000",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "1000",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "100",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Lt",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "10",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"satuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhan\"",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ratusan\"",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ribuan\"",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhribuan\"",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"lebih dari puluhribuan\"",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC53.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "LtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "9",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "LtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "99",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "And",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "GtE",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "100",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "LtE",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "999",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "GtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "1000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "LtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "9999",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "And",
+                          "args": [
+                            {
+                              "type": "Op",
+                              "name": "GtE",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "10000",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            },
+                            {
+                              "type": "Op",
+                              "name": "LtE",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "99999",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhribuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "None",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC83.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "LtE",
+              "args": [
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "LtE",
+                  "args": [
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    },
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "100",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "And",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "LtE",
+                      "args": [
+                        {
+                          "type": "Const",
+                          "value": "100",
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "1000",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "LtE",
+                          "args": [
+                            {
+                              "type": "Const",
+                              "value": "1000",
+                              "original": null
+                            },
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "Lt",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "10000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "And",
+                          "args": [
+                            {
+                              "type": "Op",
+                              "name": "LtE",
+                              "args": [
+                                {
+                                  "type": "Const",
+                                  "value": "10000",
+                                  "original": null
+                                },
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            },
+                            {
+                              "type": "Op",
+                              "name": "Lt",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "N",
+                                  "primed": false,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "100000",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhribuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"nilai di luar jangkauan\"",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC7.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Lt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Pow",
+              "args": [
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "1",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Pow",
+                  "args": [
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "2",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "Pow",
+                      "args": [
+                        {
+                          "type": "Const",
+                          "value": "10",
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "3",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "Pow",
+                          "args": [
+                            {
+                              "type": "Const",
+                              "value": "10",
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "4",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Lt",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Op",
+                              "name": "Pow",
+                              "args": [
+                                {
+                                  "type": "Const",
+                                  "value": "10",
+                                  "original": null
+                                },
+                                {
+                                  "type": "Const",
+                                  "value": "5",
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhribuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "$ret",
+                          "primed": false,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC26.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "LtE",
+              "args": [
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "100",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "1000",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "10000",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"puluhribuan\"",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC5.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Lt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "10",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "100",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "1000",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "10000",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Lt",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "100000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhribuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "$ret",
+                          "primed": false,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC11.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "LtE",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "9",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "LtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "99",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "LtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "999",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "LtE",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "9999",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "ite",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "LtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "99999",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "\"puluhribuan\"",
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "$ret",
+                          "primed": false,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC33.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Const",
+                  "value": "9999",
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "100000",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"puluhribuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Const",
+                      "value": "999",
+                      "original": null
+                    },
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "10000",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"ribuan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "And",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Const",
+                          "value": "99",
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "Lt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "1000",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Lt",
+                          "args": [
+                            {
+                              "type": "Const",
+                              "value": "9",
+                              "original": null
+                            },
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "Lt",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "N",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "100",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"puluhan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"satuan\"",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC27.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Gt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "9999",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"puluhribuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Gt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "999",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"ribuan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Gt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "99",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Gt",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "9",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"puluhan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"satuan\"",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC40.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "LtE",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "9",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"satuan\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "LtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "99",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"puluhan\"",
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "ite",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "LtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "999",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "\"ratusan\"",
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "ite",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "LtE",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "N",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "9999",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"ribuan\"",
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "\"puluhribuan\"",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC38.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "N",
+    "expr": {
+      "type": "Var",
+      "name": "N",
+      "primed": false,
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "N",
+    "expr": {
+      "type": "Op",
+      "name": "int",
+      "args": [
+        {
+          "type": "Op",
+          "name": "str",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            }
+          ],
+          "original": [
+            "N",
+            78
+          ]
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC22.py"
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "panjang_digit",
+    "expr": {
+      "type": "Op",
+      "name": "len",
+      "args": [
+        {
+          "type": "Op",
+          "name": "str",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "panjang_digit",
+    "expr": {
+      "type": "Op",
+      "name": "len",
+      "args": [
+        {
+          "type": "Op",
+          "name": "str",
+          "args": [
+            {
+              "type": "Op",
+              "name": "abs",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\ta\\correct\\AC75.py"
+  }
+]

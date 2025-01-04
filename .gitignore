@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
+pylpsolve.cpython-311-x86_64-linux-gnu.so
 
 # Distribution / packaging
 .Python
