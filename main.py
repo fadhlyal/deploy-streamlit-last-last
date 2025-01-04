@@ -16,13 +16,6 @@ from clara.feedback_python import PythonFeedback
 os.environ["LD_LIBRARY_PATH"] = "/mount/src/deploy-streamlit-last-last/lpsolve"
 subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=True)
 
-command = ['chmod', '755', '/mount/src/deploy-streamlit-last-last/lpsolve/liblpsolve55.so']
-subprocess.run(command, check=True)
-
-file_path = '/mount/src/deploy-streamlit-last-last/clara/pylpsolve.cpython-311-x86_64-linux-gnu.so'
-result = subprocess.run(['ldd', file_path], check=True, capture_output=True, text=True)
-print(result.stdout)
-
 # Configure Streamlit page
 st.set_page_config(
     page_title="Clara Feedback Analysis",
