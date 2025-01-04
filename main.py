@@ -19,6 +19,10 @@ subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=Tru
 command = ['chmod', '755', '/mount/src/deploy-streamlit-last-last/lpsolve/liblpsolve55.so']
 subprocess.run(command, check=True)
 
+file_path = '/mount/src/deploy-streamlit-last-last/lpsolve/liblpsolve55.so'
+result = subprocess.run(['ls', file_path], check=True, capture_output=True, text=True)
+print(result.stdout)
+
 # Configure Streamlit page
 st.set_page_config(
     page_title="Clara Feedback Analysis",
