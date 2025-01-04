@@ -19,9 +19,9 @@ subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=Tru
 command = ['chmod', '755', '/mount/src/deploy-streamlit-last-last/lpsolve/liblpsolve55.so']
 subprocess.run(command, check=True)
 
-file_path = '/mount/src/deploy-streamlit-last-last/lpsolve/liblpsolve55.so'
-result = subprocess.run(['ls', file_path], check=True, capture_output=True, text=True)
-print(os.path.exists(file_path))
+file_path = '/mount/src/deploy-streamlit-last-last/clara/pylpsolve.cpython-311-x86_64-linux-gnu.so'
+result = subprocess.run(['ldd', file_path], check=True, capture_output=True, text=True)
+print(result.stdout)
 
 # Configure Streamlit page
 st.set_page_config(
