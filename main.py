@@ -90,8 +90,9 @@ def main():
             return
 
         st.header("Generate Feedback for '" + problem_type + "'")
+        os.environ["LD_LIBRARY_PATH"] = "/mount/src/deploy-streamlit-last-last/lpsolve"
         st.error(os.getenv("LD_LIBRARY_PATH", ""))
-        
+
         if(problem_type == "problemA") :
             st.write("TES")
 
