@@ -2,6 +2,8 @@ import streamlit as st
 import os
 import glob
 from ast import literal_eval
+import subprocess
+import sys
 
 # Import clara components
 from clara.interpreter import getlanginter
@@ -10,6 +12,9 @@ from clara.feedback import Feedback, FeedGen
 from clara.feedback_repair import RepairFeedback
 from clara.feedback_simple import SimpleFeedback
 from clara.feedback_python import PythonFeedback
+
+subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=True)
+os.environ["LD_LIBRARY_PATH"] = "/mount/src/deploy-streamlit-last-last/lpsolve"
 
 # Configure Streamlit page
 st.set_page_config(
@@ -90,7 +95,6 @@ def main():
             return
 
         st.header("Generate Feedback for '" + problem_type + "'")
-        os.environ["LD_LIBRARY_PATH"] = "/mount/src/deploy-streamlit-last-last/lpsolve"
         st.error(os.getenv("LD_LIBRARY_PATH", ""))
 
         if(problem_type == "problemA") :
