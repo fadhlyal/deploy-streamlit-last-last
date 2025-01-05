@@ -20,6 +20,11 @@ if path not in sys.path:
 # os.environ["LD_LIBRARY_PATH"] = path
 subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=True)
 
+lib_path = os.path.join(path, 'liblpsolve55.so')
+if os.path.exists(lib_path):
+    os.chmod(lib_path, 0o755)
+    print(f"Successfully set permissions for {lib_path}")
+
 # lib_path = os.path.join(path, 'liblpsolve55.so')
 # os.chmod(lib_path, 0o755)
 
