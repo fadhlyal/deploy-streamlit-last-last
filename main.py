@@ -4,6 +4,7 @@ import glob
 from ast import literal_eval
 import subprocess
 import sys
+import ctypes
 
 # Import clara components
 from clara.interpreter import getlanginter
@@ -23,6 +24,7 @@ subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=Tru
 lib_path = os.path.join(path, 'liblpsolve55.so')
 if os.path.exists(lib_path):
     os.chmod(lib_path, 0o755)
+    ctypes.CDLL(lib_path)
     print(f"Successfully set permissions for {lib_path}")
 
 # lib_path = os.path.join(path, 'liblpsolve55.so')
