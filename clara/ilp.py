@@ -4,13 +4,17 @@ ILP solver
 
 # Python imports
 import time
+import os
+
+path = "/mount/src/deploy-streamlit-last-last/lpsolve"
+
+os.environ["LD_LIBRARY_PATH"] = path
 
 # clara imports
 from .common import debug
 from .model import SPECIAL_VARS
 from .pylpsolve import LpModel, EQ, LE, GE, TIMEOUT, SUBOPTIMAL, NUMFAILURE
 from .repair import Timeout
-
 
 class Solver(object):
 
