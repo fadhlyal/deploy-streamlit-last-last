@@ -14,10 +14,13 @@ from clara.feedback_repair import RepairFeedback
 from clara.feedback_simple import SimpleFeedback
 from clara.feedback_python import PythonFeedback
 
-subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=True)
+path = os.getenv("LD_LIBRARY_PATH", "")
 
-lib_path = "/mount/src/deploy-streamlit-last-last/lpsolve/liblpsolve55.so"
-ctypes.CDLL(lib_path)
+if "/mount" in path:
+    subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=True)
+
+    lib_path = os.path.join(path, 'liblpsolve55.so')
+    ctypes.CDLL(lib_path)
 
 # Configure Streamlit page
 st.set_page_config(

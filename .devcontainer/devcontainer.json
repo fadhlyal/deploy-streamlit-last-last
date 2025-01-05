@@ -19,7 +19,7 @@
   },
   "updateContentCommand": "[ -f packages.txt ] && sudo apt update && sudo apt upgrade -y && sudo xargs apt install -y <packages.txt; [ -f requirements.txt ] && pip3 install --user -r requirements.txt; pip3 install --user streamlit; echo '✅ Packages installed and Requirements met'",
   "containerEnv": {
-    "LD_LIBRARY_PATH": "/mount/src/deploy-streamlit-last-last/lpsolve"
+    "LD_LIBRARY_PATH": "/workspaces/deploy-streamlit-last-last/lpsolve"
   },
   "postCreateCommand": "python setup.py build_ext --inplace",
   "postAttachCommand": {
