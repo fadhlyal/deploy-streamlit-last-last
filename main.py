@@ -15,8 +15,9 @@ from clara.feedback_simple import SimpleFeedback
 from clara.feedback_python import PythonFeedback
 
 path = os.getenv("LD_LIBRARY_PATH", "")
+build_path = os.getenv("build_path", "")
 
-if "/mount" in path:
+if "/mount" in path and not (os.path.exists(build_path)) :
     subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=True)
 
     lib_path = os.path.join(path, 'liblpsolve55.so')
