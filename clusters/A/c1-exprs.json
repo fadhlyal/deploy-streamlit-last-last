@@ -1,0 +1,66 @@
+[
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Var",
+          "name": "X",
+          "primed": true,
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "Y",
+          "primed": true,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Op",
+          "name": "int",
+          "args": [
+            {
+              "type": "Var",
+              "name": "X",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "int",
+          "args": [
+            {
+              "type": "Var",
+              "name": "Y",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemAmod\\correct\\AC124.py"
+  }
+]

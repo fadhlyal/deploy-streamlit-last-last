@@ -1,0 +1,50 @@
+[
+  {
+    "fnc": "problemB",
+    "loc": 1,
+    "var": "total_course",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Const",
+          "value": "2",
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "N",
+          "primed": false,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemB",
+    "loc": 1,
+    "var": "total_course",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Var",
+          "name": "N",
+          "primed": false,
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "2",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemBmod\\correct\\AC109.py"
+  }
+]

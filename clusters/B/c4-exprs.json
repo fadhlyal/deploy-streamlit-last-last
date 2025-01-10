@@ -1,0 +1,86 @@
+[
+  {
+    "fnc": "problemB",
+    "loc": 1,
+    "var": "a",
+    "expr": {
+      "type": "Op",
+      "name": "FloorDiv",
+      "args": [
+        {
+          "type": "Const",
+          "value": "8",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "4",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemB",
+    "loc": 1,
+    "var": "a",
+    "expr": {
+      "type": "Const",
+      "value": "2",
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemBmod\\correct\\AC173.py"
+  },
+  {
+    "fnc": "problemB",
+    "loc": 1,
+    "var": "c",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Var",
+          "name": "N",
+          "primed": false,
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "a",
+          "primed": true,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemB",
+    "loc": 1,
+    "var": "c",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Var",
+          "name": "a",
+          "primed": true,
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "N",
+          "primed": false,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemBmod\\correct\\AC173.py"
+  }
+]

@@ -10,8 +10,6 @@ import ctypes
 from clara.interpreter import getlanginter
 from clara.parser import getlangparser
 from clara.feedback import Feedback, FeedGen
-from clara.feedback_repair import RepairFeedback
-from clara.feedback_simple import SimpleFeedback
 from clara.feedback_python import PythonFeedback
 
 path = os.getenv("LD_LIBRARY_PATH", "")
@@ -76,7 +74,7 @@ def main():
         st.sidebar.subheader("List Problem")
         problem_type = st.sidebar.radio(
             "Select Problem",
-            ["problemA", "problemB", "problemC", "problemD", "problemE", "problemF", "problemG", "problemH", "problemI", "problemJ"]
+            ["problemA", "problemB", "problemC", "problemD", "problemE"]
         )
 
         # Configuration
@@ -102,9 +100,21 @@ def main():
             return
 
         st.header("Generate Feedback for '" + problem_type + "'")
-        st.error(os.getenv("LD_LIBRARY_PATH", ""))
 
         if(problem_type == "problemA") :
+            type = "A"
+            st.write("TES")
+        elif(problem_type == "problemB") :
+            type = "B"
+            st.write("TES")
+        elif(problem_type == "problemC") :
+            type = "C"
+            st.write("TES")
+        elif(problem_type == "problemD") :
+            type = "D"
+            st.write("TES")
+        elif(problem_type == "problemE") :
+            type = "E"
             st.write("TES")
 
         # Upload incorrect program
@@ -114,7 +124,7 @@ def main():
 
         # Cluster directory input
         cluster_dir = os.path.join(os.path.dirname(__file__), 'clusters')
-        cluster_dir = os.path.join(cluster_dir, problem_type)
+        cluster_dir = os.path.join(cluster_dir, type)
 
         max_cost = 0 #0 means no limit
         clean_strings = False #Clean Strings

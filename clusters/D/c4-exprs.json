@@ -1,0 +1,110 @@
+[
+  {
+    "fnc": "problemD",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "GtE",
+          "args": [
+            {
+              "type": "Var",
+              "name": "x",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Mult",
+              "args": [
+                {
+                  "type": "Const",
+                  "value": "2",
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "y",
+                  "primed": true,
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"yes\"",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"no\"",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemD",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "LtE",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Mult",
+              "args": [
+                {
+                  "type": "Const",
+                  "value": "2",
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "y",
+                  "primed": true,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Var",
+              "name": "x",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"yes\"",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"no\"",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemDmod\\correct\\AC15.py"
+  }
+]

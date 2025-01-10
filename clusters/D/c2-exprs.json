@@ -1,0 +1,324 @@
+[
+  {
+    "fnc": "problemD",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "GtE",
+          "args": [
+            {
+              "type": "Var",
+              "name": "x",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Mult",
+              "args": [
+                {
+                  "type": "Const",
+                  "value": "2",
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "y",
+                  "primed": true,
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"Yes\"",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"No\"",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemD",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "And",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "GtE",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "x",
+                          "primed": true,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "1",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "GtE",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "y",
+                          "primed": true,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "1",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "LtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "x",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "100",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "LtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "y",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "100",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "x",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Mult",
+                  "args": [
+                    {
+                      "type": "Const",
+                      "value": "2",
+                      "original": null
+                    },
+                    {
+                      "type": "Var",
+                      "name": "y",
+                      "primed": true,
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Yes\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"No\"",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "$ret",
+          "primed": false,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemDmod\\correct\\AC184.py"
+  },
+  {
+    "fnc": "problemD",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "GtE",
+          "args": [
+            {
+              "type": "Var",
+              "name": "x",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Mult",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "y",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "2",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"Yes\"",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"No\"",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemDmod\\correct\\AC103.py"
+  },
+  {
+    "fnc": "problemD",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "LtE",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Mult",
+              "args": [
+                {
+                  "type": "Const",
+                  "value": "2",
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "y",
+                  "primed": true,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Var",
+              "name": "x",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"Yes\"",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"No\"",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemDmod\\correct\\AC156.py"
+  }
+]

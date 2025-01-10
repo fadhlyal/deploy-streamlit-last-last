@@ -1,0 +1,201 @@
+[
+  {
+    "fnc": "problemC",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "GtE",
+          "args": [
+            {
+              "type": "Var",
+              "name": "x",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Var",
+              "name": "y",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"no\"",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"yes\"",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemC",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Gt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "y",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Var",
+              "name": "x",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"yes\"",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"no\"",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemCmod\\correct\\AC127.py"
+  },
+  {
+    "fnc": "problemC",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Gt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "x",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Var",
+              "name": "y",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"no\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "x",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "y",
+                  "primed": true,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"yes\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"no\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemCmod\\correct\\AC147.py"
+  },
+  {
+    "fnc": "problemC",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Lt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "x",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Var",
+              "name": "y",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"yes\"",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"no\"",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemCmod\\correct\\AC128.py"
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "fnc": "problemB",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Var",
+          "name": "a",
+          "primed": false,
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "2",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemB",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Add",
+      "args": [
+        {
+          "type": "Var",
+          "name": "a",
+          "primed": false,
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "a",
+          "primed": false,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemBmod\\correct\\AC199.py"
+  },
+  {
+    "fnc": "problemB",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Const",
+          "value": "2",
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "a",
+          "primed": false,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemBmod\\correct\\AC103.py"
+  },
+  {
+    "fnc": "problemB",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Var",
+          "name": "a",
+          "primed": false,
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "2",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  }
+]
