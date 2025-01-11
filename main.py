@@ -83,7 +83,7 @@ def main():
         timeout = 60
 
         # Program inputs
-        args_input = "[[1], [10], [100], [1000], [10000], [0]]"
+        args_input = ""
         ins_input = ""
 
         # Parse args and ins
@@ -102,20 +102,16 @@ def main():
         st.header("Generate Feedback for '" + problem_type + "'")
 
         if(problem_type == "problemA") :
+            args_input = "[[[1,2]], [[2,2]], [[3,7]], [[7,7]], [[7,8]], [[9,3]]]"
             type = "A"
-            st.write("TES")
         elif(problem_type == "problemB") :
             type = "B"
-            st.write("TES")
         elif(problem_type == "problemC") :
             type = "C"
-            st.write("TES")
         elif(problem_type == "problemD") :
             type = "D"
-            st.write("TES")
         elif(problem_type == "problemE") :
             type = "E"
-            st.write("TES")
 
         # Upload incorrect program
         incorrect_program = st.file_uploader("Upload program for feedback", key="prog")
