@@ -62,5 +62,200 @@
       "original": null
     },
     "src": "D:\\TA\\clara-master\\examples\\content\\problemAmod\\correct\\AC124.py"
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Var",
+          "name": "x",
+          "primed": true,
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "y",
+          "primed": true,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "y",
+    "expr": {
+      "type": "Op",
+      "name": "GetElement",
+      "args": [
+        {
+          "type": "Op",
+          "name": "TupleInit",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GetElement",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "GetElement",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "1",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "1",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "y",
+    "expr": {
+      "type": "Op",
+      "name": "GetElement",
+      "args": [
+        {
+          "type": "Var",
+          "name": "N",
+          "primed": false,
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "1",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemAmod\\correct\\AC118.py"
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "x",
+    "expr": {
+      "type": "Op",
+      "name": "GetElement",
+      "args": [
+        {
+          "type": "Op",
+          "name": "TupleInit",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GetElement",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "GetElement",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "1",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "0",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "x",
+    "expr": {
+      "type": "Op",
+      "name": "GetElement",
+      "args": [
+        {
+          "type": "Var",
+          "name": "N",
+          "primed": false,
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "0",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemAmod\\correct\\AC118.py"
   }
 ]
