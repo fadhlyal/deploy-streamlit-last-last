@@ -1,0 +1,518 @@
+[
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "GetElement",
+      "args": [
+        {
+          "type": "Op",
+          "name": "ListInit",
+          "args": [
+            {
+              "type": "Const",
+              "value": "\"negative\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"zero\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"positive\"",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Add",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Sub",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Gt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "1",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Eq",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"zero\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Gt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"positive\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"negative\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC19.py"
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Gt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"positive\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"negative\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"zero\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC12.py"
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Lt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"negative\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Gt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"positive\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"zero\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC18.py"
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Eq",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"zero\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"negative\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"positive\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC10.py"
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Lt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"negative\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Eq",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"zero\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"positive\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC16.py"
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Gt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"positive\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Eq",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"zero\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"negative\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC14.py"
+  }
+]

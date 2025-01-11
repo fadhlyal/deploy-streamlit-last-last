@@ -74,7 +74,7 @@ def main():
         st.sidebar.subheader("List Problem")
         problem_type = st.sidebar.radio(
             "Select Problem",
-            ["problemA", "problemB", "problemC", "problemD", "problemE"]
+            ["problemA", "problemB", "problemC", "problemD", "problemE", "problemF"]
         )
 
         # Configuration
@@ -105,6 +105,9 @@ def main():
         elif(problem_type == "problemE") :
             args_input = "[[[1, 55]], [[1, 56]], [[2, 35]], [[24, 2]], [[55, 1]], [[56, 1]]]"
             type = "E"
+        elif(problem_type == "problemF") :
+            args_input = "[[0], [-5], [10], [100], [-51]]"
+            type = "F"
 
         try:
             if args_input.strip():
