@@ -97,10 +97,13 @@ def main():
             args_input = "[[2], [4], [5], [9], [12], [3]]"
             type = "B"
         elif(problem_type == "problemC") :
+            args_input = "[[[7, 9]], [[6, 6]], [[31, 53]], [[53, 8]], [[3, 8]]]"
             type = "C"
         elif(problem_type == "problemD") :
+            args_input = "[[[2, 1]], [[1, 2]], [[8, 8]], [[53, 8]], [[3, 8]]]"
             type = "D"
         elif(problem_type == "problemE") :
+            args_input = "[[[1, 55]], [[1, 56]], [[2, 35]], [[24, 2]], [[55, 1]], [[56, 1]]]"
             type = "E"
 
         try:
