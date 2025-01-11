@@ -74,7 +74,7 @@ def main():
         st.sidebar.subheader("List Problem")
         problem_type = st.sidebar.radio(
             "Select Problem",
-            ["problemA", "problemB", "problemC", "problemD", "problemE"]
+            ["problemB"]
         )
 
         # Configuration
@@ -94,6 +94,7 @@ def main():
             args_input = "[[[1,2]], [[2,2]], [[3,7]], [[7,7]], [[7,8]], [[9,3]]]"
             type = "A"
         elif(problem_type == "problemB") :
+            args_input = "[[2], [4], [5], [9], [12], [3]]"
             type = "B"
         elif(problem_type == "problemC") :
             type = "C"
