@@ -90,17 +90,6 @@ def main():
         args = None
         ins = None
 
-        try:
-            if args_input.strip():
-                args = literal_eval(args_input)
-            if ins_input.strip():
-                ins = literal_eval(ins_input)
-        except Exception as e:
-            st.error(f"Error parsing arguments or inputs: {str(e)}")
-            return
-
-        st.header("Generate Feedback for '" + problem_type + "'")
-
         if(problem_type == "problemA") :
             args_input = "[[[1,2]], [[2,2]], [[3,7]], [[7,7]], [[7,8]], [[9,3]]]"
             type = "A"
@@ -112,6 +101,17 @@ def main():
             type = "D"
         elif(problem_type == "problemE") :
             type = "E"
+
+        try:
+            if args_input.strip():
+                args = literal_eval(args_input)
+            if ins_input.strip():
+                ins = literal_eval(ins_input)
+        except Exception as e:
+            st.error(f"Error parsing arguments or inputs: {str(e)}")
+            return
+
+        st.header("Generate Feedback for '" + problem_type + "'")
 
         # Upload incorrect program
         incorrect_program = st.file_uploader("Upload program for feedback", key="prog")
