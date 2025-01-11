@@ -1,5 +1,4 @@
 def problemA(N):
-    x,y = N[0], N[1]
-    cook = x
-    customer = x*y
-    return customer
+    X = N[0], N[1]
+    a=X[0]*X[1]
+    return a

@@ -9,13 +9,13 @@
       "args": [
         {
           "type": "Var",
-          "name": "X",
+          "name": "x",
           "primed": true,
           "original": null
         },
         {
           "type": "Var",
-          "name": "Y",
+          "name": "y",
           "primed": true,
           "original": null
         }
@@ -38,7 +38,7 @@
           "args": [
             {
               "type": "Var",
-              "name": "X",
+              "name": "x",
               "primed": true,
               "original": null
             }
@@ -51,7 +51,7 @@
           "args": [
             {
               "type": "Var",
-              "name": "Y",
+              "name": "y",
               "primed": true,
               "original": null
             }
