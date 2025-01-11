@@ -128,7 +128,7 @@ def main():
 
         max_cost = 0 #0 means no limit
         clean_strings = False #Clean Strings
-        ignore_io = False #Input Output
+        ignore_io = True #Input Output
         ignore_ret = False #Return Value
 
         if st.button("Generate Feedback", type="primary"):
