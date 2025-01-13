@@ -1,3 +1,3 @@
 def problemF(N):
-    result = "positive" if N > 0 else "negative" if N < 0 else "zero"
+    result = "Positive" if N > 0 else "Negative" if N < 0 else "Zero"
     return result
