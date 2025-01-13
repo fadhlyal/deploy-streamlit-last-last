@@ -94,7 +94,7 @@ def main():
         if(problem_type == "problemA") :
             st.header("Count Vowels Problem Description")
             st.write("""
-                **Count Vowels**
+                ### Count Vowels
 
                 Write a program that uses a while loop to find the number of vowels in a given input string of lowercase Latin letters.
 
