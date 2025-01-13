@@ -92,6 +92,33 @@ def main():
         ins = None
 
         if(problem_type == "problemA") :
+            args_input = "[[[1,2]], [[2,2]], [[3,7]], [[7,7]], [[7,8]], [[9,3]]]"
+            type = "A"
+        elif(problem_type == "problemB") :
+            args_input = "[[2], [4], [5], [9], [12], [3]]"
+            type = "B"
+        elif(problem_type == "problemC") :
+            args_input = "[[[7, 9]], [[6, 6]], [[31, 53]], [[53, 8]], [[3, 8]]]"
+            type = "C"
+        elif(problem_type == "problemD") :
+            args_input = "[[[2, 1]], [[1, 2]], [[8, 8]], [[53, 8]], [[3, 8]]]"
+            type = "D"
+        elif(problem_type == "problemE") :
+            args_input = "[[[1, 55]], [[1, 56]], [[2, 35]], [[24, 2]], [[55, 1]], [[56, 1]]]"
+            type = "E"
+        elif(problem_type == "problemF") :
+            args_input = "[[0], [-5], [10], [100], [-51]]"
+            type = "F"
+        elif(problem_type == "problemG") :
+            args_input = "[[0], [52], [10], [41], [40], [72], [70], [90], [92], [5]]"
+            type = "G"
+        elif(problem_type == "problemH") :
+            args_input = "[[5], [7], [10]]"
+            type = "H"
+        elif(problem_type == "problemI") :
+            args_input = "[[5], [7], [10]]"
+            type = "I"
+        elif(problem_type == "problemJ") :
             st.write("""
                 ### Count Vowels
 
@@ -132,36 +159,9 @@ def main():
 
             st.write("""
                 ### Explanation:
-codechef        has 3 vowels: `o`, `e` and another `e`
+                codechef has 3 vowels: `o`, `e` and another `e`
             """)
-
-            args_input = "[[[1,2]], [[2,2]], [[3,7]], [[7,7]], [[7,8]], [[9,3]]]"
-            type = "A"
-        elif(problem_type == "problemB") :
-            args_input = "[[2], [4], [5], [9], [12], [3]]"
-            type = "B"
-        elif(problem_type == "problemC") :
-            args_input = "[[[7, 9]], [[6, 6]], [[31, 53]], [[53, 8]], [[3, 8]]]"
-            type = "C"
-        elif(problem_type == "problemD") :
-            args_input = "[[[2, 1]], [[1, 2]], [[8, 8]], [[53, 8]], [[3, 8]]]"
-            type = "D"
-        elif(problem_type == "problemE") :
-            args_input = "[[[1, 55]], [[1, 56]], [[2, 35]], [[24, 2]], [[55, 1]], [[56, 1]]]"
-            type = "E"
-        elif(problem_type == "problemF") :
-            args_input = "[[0], [-5], [10], [100], [-51]]"
-            type = "F"
-        elif(problem_type == "problemG") :
-            args_input = "[[0], [52], [10], [41], [40], [72], [70], [90], [92], [5]]"
-            type = "G"
-        elif(problem_type == "problemH") :
-            args_input = "[[5], [7], [10]]"
-            type = "H"
-        elif(problem_type == "problemI") :
-            args_input = "[[5], [7], [10]]"
-            type = "I"
-        elif(problem_type == "problemJ") :
+        
             args_input = "[['codechef'], ['abcdefghijklmnopqrstuvwxyz'], ['codingpractice'], ['codingisfun']]"
             type = "J"
 
