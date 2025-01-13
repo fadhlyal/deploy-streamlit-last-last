@@ -5,6 +5,7 @@ from ast import literal_eval
 import subprocess
 import sys
 import ctypes
+import pandas as pd
 
 # Import clara components
 from clara.interpreter import getlanginter
@@ -91,6 +92,50 @@ def main():
         ins = None
 
         if(problem_type == "problemA") :
+            st.header("Count Vowels Problem Description")
+            st.write("""
+                **Count Vowels**
+
+                Write a program that uses a while loop to find the number of vowels in a given input string of lowercase Latin letters.
+
+                **Note**: Vowels in lowercase Latin letters are: `a`, `e`, `i`, `o`, and `u`.
+
+                ### Input Format
+                The only line of input contains a string.
+
+                ### Output Format
+                The only line of output contains a single integer - the count of vowels in the input string.
+            """)
+            st.write("### Sample 1")
+            data = {
+                "Input": ["codechef"],
+                "Output": ["3"]
+            }
+
+            # Convert the dictionary to a DataFrame
+            df = pd.DataFrame(data)
+
+            st.markdown("""
+                <style>
+                .full-width-table {
+                    width: 100%;
+                    text-align: left;
+                }
+
+                .full-width-table th {
+                    text-align: left;  /* Aligns the header text to the left */
+                }
+                </style>
+            """, unsafe_allow_html=True)
+
+            # Display the table without index and make it full width
+            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
+
+            st.write("""
+                ### Explanation:
+codechef        has 3 vowels: `o`, `e` and another `e`
+            """)
+
             args_input = "[[[1,2]], [[2,2]], [[3,7]], [[7,7]], [[7,8]], [[9,3]]]"
             type = "A"
         elif(problem_type == "problemB") :
