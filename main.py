@@ -92,7 +92,6 @@ def main():
         ins = None
 
         if(problem_type == "problemA") :
-            st.header("Count Vowels Problem Description")
             st.write("""
                 ### Count Vowels
 
