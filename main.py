@@ -75,7 +75,7 @@ def main():
         st.sidebar.subheader("List Problem")
         problem_type = st.sidebar.radio(
             "Select Problem",
-            ["problemA", "problemB", "problemC", "problemD", "problemE", "problemF", "problemG"]
+            ["problemA", "problemB", "problemC", "problemD", "problemE", "problemF", "problemG", "problemH", "problemI", "problemJ"]
         )
 
         # Configuration
