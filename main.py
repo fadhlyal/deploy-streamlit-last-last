@@ -181,7 +181,7 @@ def main():
             type = "A"
         elif(problem_type == "problemB") :
             st.write("""
-                ### Chef and Instant Noodles
+                ### Learn Problem Solving
                 Currently there are courses for 4 languages, and hence there are 8 courses in this section. But suppose there are courses for N languages, what will be the total number of courses in this section?
 
                 ### Input Format
@@ -190,8 +190,8 @@ def main():
                 ### Output Format
                 Output on a single line the total number of courses in the section.
 
-                ### Constraints
-                - 1 ≤ X,Y ≤ 100
+                ### Constraint
+                - 1 ≤ N ≤ 100
             """)
             st.write("### Sample 1")
             data = {
