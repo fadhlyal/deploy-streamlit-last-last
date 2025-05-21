@@ -103,7 +103,7 @@ def load_adaptive_feedback(previous_code, difficulty, repair_suggestion):
                 - Focus on their algorithmic approach.
                 - Emphasize the "why" of the issue, not just the "how" to fix it.
             - Don't use the hint for the exactly right answer, just give the output only don't mention extra information about language that be used, and difficulty level, make more simple max 100-120 words
-            - use only one output and translate the output into Bahasa Indonesia
+            - Only use one feedback and translate the output into Bahasa Indonesia
 
             The input will be given like this:
             Previous code:
