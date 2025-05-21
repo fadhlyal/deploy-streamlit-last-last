@@ -1,0 +1,64 @@
+[
+  {
+    "fnc": "problemF",
+    "loc": 2,
+    "var": "$cond",
+    "expr": {
+      "type": "Op",
+      "name": "LtE",
+      "args": [
+        {
+          "type": "Var",
+          "name": "i",
+          "primed": false,
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "bilangan",
+          "primed": false,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemF",
+    "loc": 2,
+    "var": "$cond",
+    "expr": {
+      "type": "Op",
+      "name": "Lt",
+      "args": [
+        {
+          "type": "Var",
+          "name": "i",
+          "primed": false,
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Add",
+          "args": [
+            {
+              "type": "Var",
+              "name": "bilangan",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "1",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set2\\problemF\\C12.py"
+  }
+]

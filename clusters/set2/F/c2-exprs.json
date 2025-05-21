@@ -1,0 +1,45 @@
+[
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "iter#0",
+    "expr": {
+      "type": "Op",
+      "name": "range",
+      "args": [
+        {
+          "type": "Const",
+          "value": "0",
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "bilangan",
+          "primed": true,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "iter#0",
+    "expr": {
+      "type": "Op",
+      "name": "range",
+      "args": [
+        {
+          "type": "Var",
+          "name": "bilangan",
+          "primed": true,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set2\\problemF\\C2.py"
+  }
+]

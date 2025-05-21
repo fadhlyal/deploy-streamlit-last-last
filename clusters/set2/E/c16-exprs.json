@@ -1,0 +1,495 @@
+[
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Not",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Gt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "health",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Or",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Or",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Eq",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "level",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "1",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "GtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "score",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "1000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Eq",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "level",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "2",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "GtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "score",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "3000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "GtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "score",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "7000",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Gt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "health",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Or",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Or",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Eq",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "level",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "1",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "GtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "score",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "1000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Eq",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "level",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "2",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "GtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "score",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "3000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "GtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "score",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "7000",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "False",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "True",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set2\\problemE\\C8.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Gt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "health",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Or",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Or",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Eq",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "level",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "1",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "GtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "score",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "1000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "And",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Eq",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "level",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "2",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "GtE",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "score",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "3000",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "GtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "score",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "7000",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "False",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "True",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "True",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set2\\problemE\\C9.py"
+  }
+]

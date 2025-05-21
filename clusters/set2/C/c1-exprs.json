@@ -1,0 +1,239 @@
+[
+  {
+    "fnc": "problemC",
+    "loc": 1,
+    "var": "hasil",
+    "expr": {
+      "type": "Op",
+      "name": "And",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Eq",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Mod",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "d1",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "2",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Eq",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Mod",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "d2",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "2",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Eq",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Mod",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "d3",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "2",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemC",
+    "loc": 1,
+    "var": "hasil",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Eq",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Mod",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "d1",
+                          "primed": true,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "2",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Eq",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Mod",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "d2",
+                          "primed": true,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "2",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Eq",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Mod",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "d3",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "2",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "True",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "False",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set2\\problemC\\C4.py"
+  }
+]

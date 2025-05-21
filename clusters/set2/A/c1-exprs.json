@@ -1,0 +1,51 @@
+[
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "hasil",
+    "expr": {
+      "type": "Op",
+      "name": "Mult",
+      "args": [
+        {
+          "type": "Var",
+          "name": "sisi",
+          "primed": true,
+          "original": null
+        },
+        {
+          "type": "Var",
+          "name": "sisi",
+          "primed": true,
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "hasil",
+    "expr": {
+      "type": "Op",
+      "name": "Pow",
+      "args": [
+        {
+          "type": "Var",
+          "name": "sisi",
+          "primed": true,
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "2",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set2\\problemA\\C3.py"
+  }
+]
