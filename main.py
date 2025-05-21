@@ -19,9 +19,6 @@ from clara.feedback_python import PythonFeedback
 path = os.getenv("LD_LIBRARY_PATH", "")
 build_path = os.getenv("build_path", "")
 key = os.getenv("API_KEY", "")
-print(1, path)
-print(2, build_path)
-print(3, key)
 
 if "/mount" in path and not (os.path.exists(build_path)) :
     subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=True)
@@ -485,9 +482,7 @@ def main():
 
                                 st.success("Feedback generated successfully!")
                                 st.subheader("Feedback:")
-                                for f in feedback.feedback:
-                                    st.markdown(f"{f}")
-                                # st.text_area("", value=adaptive_feedback.choices[0].message.content, disabled=True)
+                                st.text_area("", value=adaptive_feedback.choices[0].message.content, disabled=True)
                             else :
                                 st.success("Answer is Correct")
                     elif feedback.status == Feedback.STATUS_ERROR:
