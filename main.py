@@ -19,6 +19,9 @@ from clara.feedback_python import PythonFeedback
 path = os.getenv("LD_LIBRARY_PATH", "")
 build_path = os.getenv("build_path", "")
 key = os.getenv("API_KEY", "")
+print(1, path)
+print(2, build_path)
+print(3, key)
 
 if "/mount" in path and not (os.path.exists(build_path)) :
     subprocess.run([sys.executable, 'setup.py', 'build_ext', '--inplace'], check=True)
