@@ -102,8 +102,8 @@ def load_adaptive_feedback(previous_code, difficulty, repair_suggestion):
                 - Encourage abstract reasoning and critical thinking.
                 - Focus on their algorithmic approach.
                 - Emphasize the "why" of the issue, not just the "how" to fix it.
-            - Don't use the hint for the exactly right answer, just give the output only don't mention extra information about language that be used, and difficulty level, make more simple max 100-120 words
-            - Only use one feedback and translate the output into Bahasa Indonesia
+            - Don't use the hint for the exactly right answer, just give the feedback only don't mention extra information about language that be used, and difficulty level, make more simple max 100-120 words
+            - Only use one feedback and translate the feedback into Bahasa Indonesia
 
             The input will be given like this:
             Previous code:
