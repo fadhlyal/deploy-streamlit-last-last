@@ -160,7 +160,6 @@ def rearrange_feedback(repair_suggestion):
             2. Maintain code formatting where present.
             3. Do not translate keywords in Single quotes('') and Double quotes("")
             4. Output only the final translated and rearranged text or code like the Input
-            5. Make the output always in list/array format
 
             Input:
             {repair_suggestion}
