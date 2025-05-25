@@ -71,8 +71,6 @@ def load_correct_programs(cluster_dir, lang):
         st.error(f"Error loading cluster programs: {str(e)}")
     return correct_programs
 
-import os
-from openai import OpenAI
 import logging
 
 def load_adaptive_feedback(previous_code, difficulty, repair_suggestion):
@@ -102,8 +100,11 @@ def load_adaptive_feedback(previous_code, difficulty, repair_suggestion):
                 - Encourage abstract reasoning and critical thinking.
                 - Focus on their algorithmic approach.
                 - Emphasize the "why" of the issue, not just the "how" to fix it.
-            - Don't use the hint for the exactly right answer, just give the feedback only don't mention extra information about language that be used, and difficulty level, make more simple max 100-120 words
-            - Only use one feedback and translate the feedback into Bahasa Indonesia
+            - Don't use the hint for the exactly right answer
+            - Just give the output only don't mention extra information about language that be used, and difficulty level
+            - Make more simple max 100-120 words
+            - Use only one output and translate the output into Bahasa Indonesia
+            - Don't show the original output that not be translated
 
             The input will be given like this:
             Previous code:
@@ -119,7 +120,7 @@ def load_adaptive_feedback(previous_code, difficulty, repair_suggestion):
             ---
             <your feedback here>
             ---
-        """
+            """
 
         try:
             client = OpenAI(
@@ -145,6 +146,48 @@ def load_adaptive_feedback(previous_code, difficulty, repair_suggestion):
 
     return None
 
+def rearrange_feedback(repair_suggestion):
+    if repair_suggestion:
+        prompt = f"""
+            You are a code-aware translator. Your job is to rearrange the Input according to logical or execution order and then translate each line of the Input from English to Bahasa Indonesia.
+
+            Here is what you need to do:
+            Given:
+            1. The suggested repair/fix for their code.
+
+            Your task is to:
+            1. Translate the input from English to Bahasa Indonesia
+            2. Maintain code formatting where present.
+            3. Do not translate keywords in Single quotes('') and Double quotes("")
+            4. Output only the final translated and rearranged text or code like the Input
+
+            Input:
+            {repair_suggestion}
+            """
+
+        try:
+            client = OpenAI(
+                base_url="https://openrouter.ai/api/v1",
+                api_key=key
+            )
+
+            completion = client.chat.completions.create(
+                model="deepseek/deepseek-chat-v3-0324:free",
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ]
+            )
+
+            return completion
+
+        except Exception as e:
+            logging.error("Error generating adaptive feedback: %s", e)
+            return None
+
+    return None
 
 def main():
     try:
@@ -460,7 +503,13 @@ def main():
         ignore_io = True #Input Output
         ignore_ret = False #Return Value
 
-        if st.button("Generate Feedback", type="primary"):
+        #Use session state for max 3 attempt
+        if 'type' not in st.session_state:
+            st.session_state.type = {"A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0}
+
+        is_disabled = st.session_state.type[type] == 3
+
+        if st.button("Generate Feedback", type="primary", disabled=is_disabled):
             if not incorrect_program:
                 st.error("Please upload a program for feedback.")
                 return
@@ -503,6 +552,8 @@ def main():
                             st.error(f'Max cost exceeded ({feedback.cost} > {max_cost})')
                         else:
                             if feedback.feedback :
+                                st.session_state.type[type] += 1
+
                                 # Make the feedback more readable
                                 cleaned_feedback = [re.sub(r"\s*\(cost=\d+(\.\d+)?\)", "", s) for s in feedback.feedback]
                                 cleaned_feedback = [s.replace("assignment", "variable") for s in cleaned_feedback]
@@ -510,11 +561,15 @@ def main():
                                 cleaned_feedback = [re.sub(r"\$(\w+)", r"\1", s) for s in cleaned_feedback]
                                 cleaned_feedback = [re.sub(r"\bat (\d+)\b", r"at line \1", s) for s in cleaned_feedback]
 
-                                adaptive_feedback = load_adaptive_feedback(kodingan, difficulty, cleaned_feedback)
+                                if(st.session_state.type[type] == 3) :
+                                    adaptive_feedback = rearrange_feedback(cleaned_feedback)
+                                else :
+                                    adaptive_feedback = load_adaptive_feedback(code, difficulty, cleaned_feedback)
 
                                 st.success("Feedback generated successfully!")
                                 st.subheader("Feedback:")
-                                st.text_area("", value=adaptive_feedback.choices[0].message.content, disabled=True)
+                                
+                                st.text_area("", value=adaptive_feedback.choices[0].message.content, height=300, disabled=True)
                             else :
                                 st.success("Answer is Correct")
                     elif feedback.status == Feedback.STATUS_ERROR:
