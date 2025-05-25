@@ -160,6 +160,7 @@ def rearrange_feedback(repair_suggestion):
             2. Maintain code formatting where present.
             3. Do not translate keywords in Single quotes('') and Double quotes("")
             4. Output only the final translated and rearranged text or code like the Input
+            5. Make the output always in list/array format
 
             Input:
             {repair_suggestion}
@@ -552,6 +553,7 @@ def main():
                             st.error(f'Max cost exceeded ({feedback.cost} > {max_cost})')
                         else:
                             if(st.session_state.type[type] == 3) :
+                                st.session_state.type[type] += 1
                                 if feedback.feedback :
                                     st.error("Answer is Incorrect")
                                 else :
@@ -567,14 +569,18 @@ def main():
                                 cleaned_feedback = [re.sub(r"\bat (\d+)\b", r"at line \1", s) for s in cleaned_feedback]
 
                                 if(st.session_state.type[type] == 3) :
-                                    adaptive_feedback = rearrange_feedback(cleaned_feedback)
-                                else :
-                                    adaptive_feedback = load_adaptive_feedback(kodingan, difficulty, cleaned_feedback)
+                                    st.success("Feedback generated successfully!")
+                                    st.subheader("Feedback:")
 
-                                st.success("Feedback generated successfully!")
-                                st.subheader("Feedback:")
-                                
-                                st.text_area("", value=adaptive_feedback.choices[0].message.content, height=300, disabled=True)
+                                    adaptive_feedback = rearrange_feedback(cleaned_feedback)
+                                    for f in adaptive_feedback:
+                                        st.markdown(f"{f}")
+                                else :
+                                    st.success("Feedback generated successfully!")
+                                    st.subheader("Feedback:")
+
+                                    adaptive_feedback = load_adaptive_feedback(kodingan, difficulty, cleaned_feedback)
+                                    st.text_area("", value=adaptive_feedback.choices[0].message.content, height=300, disabled=True)
                             else :
                                 st.success("Answer is Correct")
                     elif feedback.status == Feedback.STATUS_ERROR:
