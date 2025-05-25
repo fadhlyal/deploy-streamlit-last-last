@@ -551,7 +551,7 @@ def main():
                         if max_cost > 0 and feedback.cost > max_cost:
                             st.error(f'Max cost exceeded ({feedback.cost} > {max_cost})')
                         else:
-                            if(st.session_state.type[type] == 4) :
+                            if(st.session_state.type[type] >= 4) :
                                 st.session_state.type[type] += 1
                                 if feedback.feedback :
                                     st.error("Answer is Incorrect")
