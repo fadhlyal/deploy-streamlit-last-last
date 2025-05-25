@@ -507,7 +507,7 @@ def main():
         if 'type' not in st.session_state:
             st.session_state.type = {"A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0}
 
-        is_disabled = st.session_state.type[type] == 3
+        is_disabled = st.session_state.type[type] >= 4
 
         if st.button("Generate Feedback", type="primary", disabled=is_disabled):
             if not incorrect_program:
@@ -551,8 +551,12 @@ def main():
                         if max_cost > 0 and feedback.cost > max_cost:
                             st.error(f'Max cost exceeded ({feedback.cost} > {max_cost})')
                         else:
-                            st.write(st.session_state.type)
-                            if feedback.feedback :
+                            if(st.session_state.type[type] == 3) :
+                                if feedback.feedback :
+                                    st.error("Answer is Incorrect")
+                                else :
+                                    st.success("Answer is Correct")
+                            elif feedback.feedback :
                                 st.session_state.type[type] += 1
 
                                 # Make the feedback more readable
