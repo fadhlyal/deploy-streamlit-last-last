@@ -570,19 +570,13 @@ def main():
 
                                 if(st.session_state.type[type] == 3) :
                                     adaptive_feedback = rearrange_feedback(cleaned_feedback)
-
-                                    st.success("Feedback generated successfully!")
-                                    st.subheader("Feedback:")
-
-                                    for f in adaptive_feedback.choices[0].message.content:
-                                        st.markdown(f"{f}")
                                 else :
                                     adaptive_feedback = load_adaptive_feedback(kodingan, difficulty, cleaned_feedback)
 
-                                    st.success("Feedback generated successfully!")
-                                    st.subheader("Feedback:")
+                                st.success("Feedback generated successfully!")
+                                st.subheader("Feedback:")
 
-                                    st.text_area("", value=adaptive_feedback.choices[0].message.content, height=300, disabled=True)
+                                st.text_area("", value=adaptive_feedback.choices[0].message.content, height=300, disabled=True)
                             else :
                                 st.success("Answer is Correct")
                     elif feedback.status == Feedback.STATUS_ERROR:
