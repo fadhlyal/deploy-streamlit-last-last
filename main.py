@@ -574,7 +574,7 @@ def main():
                                     st.success("Feedback generated successfully!")
                                     st.subheader("Feedback:")
 
-                                    for f in adaptive_feedback:
+                                    for f in adaptive_feedback.choices[0].message.content:
                                         st.markdown(f"{f}")
                                 else :
                                     adaptive_feedback = load_adaptive_feedback(kodingan, difficulty, cleaned_feedback)
