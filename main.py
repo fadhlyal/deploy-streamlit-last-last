@@ -507,7 +507,7 @@ def main():
         if 'type' not in st.session_state:
             st.session_state.type = {"A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0}
 
-        is_disabled = st.session_state.type[type] >= 4
+        is_disabled = st.session_state.type[type] >= 5
 
         if st.button("Generate Feedback", type="primary", disabled=is_disabled):
             if not incorrect_program:
@@ -551,7 +551,7 @@ def main():
                         if max_cost > 0 and feedback.cost > max_cost:
                             st.error(f'Max cost exceeded ({feedback.cost} > {max_cost})')
                         else:
-                            if(st.session_state.type[type] == 3) :
+                            if(st.session_state.type[type] == 4) :
                                 st.session_state.type[type] += 1
                                 if feedback.feedback :
                                     st.error("Answer is Incorrect")
@@ -567,7 +567,7 @@ def main():
                                 cleaned_feedback = [re.sub(r"\$(\w+)", r"\1", s) for s in cleaned_feedback]
                                 cleaned_feedback = [re.sub(r"\bat (\d+)\b", r"at line \1", s) for s in cleaned_feedback]
 
-                                if(st.session_state.type[type] == 3) :
+                                if(st.session_state.type[type] == 4) :
                                     adaptive_feedback = rearrange_feedback(cleaned_feedback)
                                 else :
                                     adaptive_feedback = load_adaptive_feedback(kodingan, difficulty, cleaned_feedback)
