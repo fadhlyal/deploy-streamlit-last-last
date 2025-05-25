@@ -564,7 +564,7 @@ def main():
                                 if(st.session_state.type[type] == 3) :
                                     adaptive_feedback = rearrange_feedback(cleaned_feedback)
                                 else :
-                                    adaptive_feedback = load_adaptive_feedback(code, difficulty, cleaned_feedback)
+                                    adaptive_feedback = load_adaptive_feedback(kodingan, difficulty, cleaned_feedback)
 
                                 st.success("Feedback generated successfully!")
                                 st.subheader("Feedback:")
