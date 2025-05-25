@@ -569,17 +569,19 @@ def main():
                                 cleaned_feedback = [re.sub(r"\bat (\d+)\b", r"at line \1", s) for s in cleaned_feedback]
 
                                 if(st.session_state.type[type] == 3) :
+                                    adaptive_feedback = rearrange_feedback(cleaned_feedback)
+
                                     st.success("Feedback generated successfully!")
                                     st.subheader("Feedback:")
 
-                                    adaptive_feedback = rearrange_feedback(cleaned_feedback)
                                     for f in adaptive_feedback:
                                         st.markdown(f"{f}")
                                 else :
+                                    adaptive_feedback = load_adaptive_feedback(kodingan, difficulty, cleaned_feedback)
+
                                     st.success("Feedback generated successfully!")
                                     st.subheader("Feedback:")
 
-                                    adaptive_feedback = load_adaptive_feedback(kodingan, difficulty, cleaned_feedback)
                                     st.text_area("", value=adaptive_feedback.choices[0].message.content, height=300, disabled=True)
                             else :
                                 st.success("Answer is Correct")
