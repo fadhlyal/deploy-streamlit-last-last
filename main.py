@@ -517,6 +517,10 @@ def main():
             model, lang = load_program(incorrect_program)
             if not model:
                 return
+            
+            if(st.session_state.type[type] >= 5) :
+                st.error("Max Attempts.")
+                return
 
             # Load correct programs from cluster
             correct_programs = load_correct_programs(cluster_dir, lang)
