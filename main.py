@@ -580,6 +580,23 @@ def main():
                                 st.subheader("Feedback:")
 
                                 st.text_area("", value=adaptive_feedback.choices[0].message.content, height=300, disabled=True)
+
+                                #Download Code with Feedback
+                                combined_text = f"""#🔧Incorrect Code:
+{code}
+
+# 💬 Feedback:
+{adaptive_feedback.choices[0].message.content}
+"""
+
+                                filename = f"problem{type}{st.session_state.type[type]}.py"
+
+                                st.download_button(
+                                    label="📥 Download Code with Feedback",
+                                    data=combined_text,
+                                    file_name=filename,
+                                    mime="text/x-python"
+                                )
                             else :
                                 st.success("Answer is Correct")
                     elif feedback.status == Feedback.STATUS_ERROR:
