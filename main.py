@@ -583,7 +583,7 @@ def main():
 
                                 #Download Code with Feedback
                                 combined_text = f"""#🔧Incorrect Code:
-{code}
+{kodingan}
 
 # 💬 Feedback:
 {adaptive_feedback.choices[0].message.content}
